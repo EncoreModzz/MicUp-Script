@@ -1,6 +1,10 @@
 local executed = false
 local whitelistecUsers = {
-    "",
+    "UnxableDev",
+    "UnxableDevAutofarm2",
+    "UnxableDevAutofarm3",
+    "UnxableDevAutofarm4",
+    "Tigerpanderjuju1234"
 }
 
 local player = game.Players.LocalPlayer
