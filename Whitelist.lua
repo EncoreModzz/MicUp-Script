@@ -27,7 +27,7 @@ if isWhitelisted then
         Duration = 5
     })
 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/UnxableDev/PrivateScript/refs/heads/main/PrivatesScript.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EncoreModzz/MicUp-Script/refs/heads/main/PrivatesScript.lua"))()
 else
        function getRoot(char)
       local rootPart = char:FindFirstChild('HumanoidRootPart') or char:FindFirstChild('Torso') or char:FindFirstChild('UpperTorso')
