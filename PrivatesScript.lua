@@ -1,10 +1,10 @@
-lib=loadstring(game:HttpGet('https://raw.githubusercontent.com/EncoreModzz/Libwrapper/refs/heads/main/libwrapper.lua'))()
+lib=loadstring(game:HttpGet('https://raw.githubusercontent.com/UnxableDev/libwrapper/refs/heads/main/libwrapper.lua?token=GHSAT0AAAAAACZPSK5UQJVKMCMAV76K6WP2ZY4EUNA'))()
 window = lib:CreateWindow("Encore Modzz")
 tab=window:CreateTab("Character")
 playertab=window:CreateTab("Target")
 Stalltab=window:CreateTab("Stall")
 TPTab=window:CreateTab("Teleport")
-ExtraTab=window:CreateTab("Extras")
+ExtraTab=window:CreateTab("Extra")
 
 
 spawn(function()sw1ndlernotify = loadstring(game:HttpGet('https://raw.githubusercontent.com/benomat/scripts/m/paste/sw1ndlernotify.lua'))()end)
