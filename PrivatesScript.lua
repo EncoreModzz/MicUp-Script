@@ -1,4 +1,4 @@
-lib=loadstring(game:HttpGet('https://raw.githubusercontent.com/UnxableDev/libwrapper/refs/heads/main/libwrapper.lua?token=GHSAT0AAAAAACZPSK5UQJVKMCMAV76K6WP2ZY4EUNA'))()
+lib=loadstring(game:HttpGet('https://raw.githubusercontent.com/EncoreModzz/Libwrapper/refs/heads/main/libwrapper.lua'))()
 window = lib:CreateWindow("Encore Modzz")
 tab=window:CreateTab("Character")
 playertab=window:CreateTab("Target")
