@@ -1,5 +1,5 @@
 lib=loadstring(game:HttpGet('https://raw.githubusercontent.com/EncoreModzz/Libwrapper/refs/heads/main/libwrapper.lua'))()
-window = lib:CreateWindow("Encore Modzz")
+window = lib:CreateWindow("ENCORE MODZZ")
 tab=window:CreateTab("Character")
 playertab=window:CreateTab("Target")
 Stalltab=window:CreateTab("Stall")
@@ -133,7 +133,7 @@ local GetPlayer = function(Name)
     end
 end
 playertab:CreateSection("Username Input")
-playertab:CreateInput("Select Player","Username",true,function(name)
+playertab:CreateInput("Type Username","NAME",true,function(name)
     getgenv().SelectedPlayer = GetPlayer(name)
 end)
 
@@ -146,6 +146,9 @@ playertab:CreateToggle("Listen to the Player",false,function(state)
     if state then Services.SoundService:SetListener(Enum.ListenerType.ObjectPosition,getgenv().SelectedPlayer.Character.HumanoidRootPart)
     else Services.SoundService:SetListener(Enum.ListenerType.Camera)end
 end)
+
+
+playertab:CreateSection("Teleport")
 playertab:CreateToggle("Loop TP to the Player",false,function(state)
     getgenv().LoopTP=state
     while getgenv().LoopTP do
@@ -169,6 +172,17 @@ function scary()
         end
     end
 end
+
+playertab:CreateButton("Teleport to a Random Player",function()
+        local players = game.Players:GetPlayers()
+        if #players > 1 then
+            local randomPlayer = players[math.random(1, #players)]
+            if randomPlayer ~= game.Players.LocalPlayer then
+                game.Players.LocalPlayer.Character:MoveTo(randomPlayer.Character.HumanoidRootPart.Position)
+            end
+        end
+end)
+
 TPTab:CreateSection("Locations")
 TPTab:CreateButton("Private Room [INSIDE]",function()
     scary()
