@@ -4,6 +4,7 @@ local whitelistecUsers = {
     "UnxableDevAutofarm2",
     "UnxableDevAutofarm3",
     "UnxableDevAutofarm4",
+    "UnxableDevAutofarm5",
     "Tigerpanderjuju1234"
 }
 
