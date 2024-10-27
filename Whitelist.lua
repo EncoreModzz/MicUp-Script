@@ -3,7 +3,7 @@ local whitelistecUsers = {
     "UnxableDev",
     "UnxableDevAutofarm2",
     "UnxableDevAutofarm3",
-    "UnxableDevAutofarm4",
+	"UnxableDevAutofarm4",
     "Tigerpanderjuju1234"
 }
 
@@ -22,18 +22,19 @@ end
 
 if isWhitelisted then
     game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "ENCORE MODZZ ON TOP!",
-        Text = "Script is loading...",
+        Title = "ENCORE MODZZ",
+        Text = "SCRIPT IS LOADING...",
         Duration = 5
     })
 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EncoreModzz/MicUp-Script/refs/heads/main/PrivatesScript.lua"))()
 else
-       function getRoot(char)
-      local rootPart = char:FindFirstChild('HumanoidRootPart') or char:FindFirstChild('Torso') or char:FindFirstChild('UpperTorso')
-      return rootPart
-end
-    wait(5)
-    player:Kick("ENCORE MODZZ ON TOP!")
+game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "ENCORE MODZZ",
+        Text = "YOU ARE NOT WHITELISTED!",
+        Duration = 3
+    })
+    wait(3)
+    player:Kick("RETARD")
 
 end
