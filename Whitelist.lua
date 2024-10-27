@@ -5,7 +5,8 @@ local whitelistecUsers = {
     "UnxableDevAutofarm3",
     "UnxableDevAutofarm4",
     "UnxableDevAutofarm5",
-    "Tigerpanderjuju1234"
+    "Tigerpanderjuju1234",
+    "Tigerpanderjuju1"
 }
 
 local player = game.Players.LocalPlayer
