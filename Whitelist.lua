@@ -34,6 +34,6 @@ else
       return rootPart
 end
     wait(5)
-    player:Kick("RETARD")
+    player:Kick("ENCORE MODZZ ON TOP!")
 
 end
