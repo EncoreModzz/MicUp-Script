@@ -23,7 +23,7 @@ end
 if isWhitelisted then
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "SUCCESS",
-        Text = "You are Authorized to run the Privat Script",
+        Text = "Encore Modzz ON TOP!",
         Duration = 5
     })
 
