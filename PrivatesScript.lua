@@ -1,5 +1,5 @@
 lib=loadstring(game:HttpGet('https://raw.githubusercontent.com/EncoreModzz/Libwrapper/refs/heads/main/libwrapper.lua'))()
-window = lib:CreateWindow("ENCORE MODZZ")
+window = lib:CreateWindow("Encore Modzz")
 tab=window:CreateTab("Character")
 playertab=window:CreateTab("Target")
 Stalltab=window:CreateTab("Stall")
@@ -133,7 +133,7 @@ local GetPlayer = function(Name)
     end
 end
 playertab:CreateSection("Username Input")
-playertab:CreateInput("Type Username","NAME",true,function(name)
+playertab:CreateInput("Type Username","Username",true,function(name)
     getgenv().SelectedPlayer = GetPlayer(name)
 end)
 
