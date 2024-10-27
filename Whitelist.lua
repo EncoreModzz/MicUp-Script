@@ -22,8 +22,8 @@ end
 
 if isWhitelisted then
     game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "SUCCESS",
-        Text = "Encore Modzz ON TOP!",
+        Title = "ENCORE MODZZ ON TOP!",
+        Text = "SUCCESS",
         Duration = 5
     })
 
